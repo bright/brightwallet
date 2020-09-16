@@ -1,3 +1,20 @@
+## Local development
+
+### Database
+
+Run `../deploy/database/init-user-db.sh` script to create development and test databases.
+
+### Dev
+
+* `nvm use`
+* `npm install`
+* `npm run database:migrate`
+* `npm run main` (starts at [localhost:3000](http://localhost:3000))
+
+### Tests
+* `DEPLOY_ENV=test-local npm run database:migrate`
+* `DEPLOY_ENV=test-local npm run test`
+
 ## Configuration
 
 The pack uses [node-convict](https://github.com/mozilla/node-convict) for configuration.
