@@ -11,7 +11,7 @@ export function envSpecificName(name: string) {
     }
 }
 
-export const PROJECT_NAME = "project_name";
+export const PROJECT_NAME = "substrate-example";
 
 export function projectEnvSpecificName(name: string) {
     const prefix = PROJECT_NAME.replace('_', '-') + "-" + DEPLOY_ENV + "-";
