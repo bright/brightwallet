@@ -36,7 +36,7 @@ export class NetworkStack extends Stack {
         })
 
         this.bastionHost = new CfnInstance(this, "BastionHost", {
-            keyName: "substrate-example-ssh-key",
+            keyName: "brightwallet-ssh-key",
             instanceType: "t2.micro",
             imageId: "ami-03a71cec707bfc3d7",
             securityGroupIds: [this.sshAccessSecurityGroup.securityGroupId],

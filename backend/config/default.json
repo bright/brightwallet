@@ -5,6 +5,6 @@
   "database": {
     "host": "host.docker.internal",
     "username": "web",
-    "database": "substrate-example"
+    "database": "brightwallet"
   }
 }

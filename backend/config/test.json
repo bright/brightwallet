@@ -1,6 +1,6 @@
 {
   "database": {
     "host": "database",
-    "database": "substrate-example-test"
+    "database": "brightwallet_test"
   }
 }

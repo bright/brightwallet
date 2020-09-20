@@ -1,6 +1,6 @@
 {
   "database": {
     "host": "localhost",
-    "database": "substrate-example"
+    "database": "brightwallet"
   }
 }

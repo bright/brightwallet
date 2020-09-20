@@ -43,7 +43,7 @@ export const databaseConfigSchema: Schema<DatabaseConfig> = {
 
     username: {
         doc: "Username used to connect to database",
-        default: "substrate-example",
+        default: "brightwallet",
         env: "DATABASE_USERNAME",
         format(value: any) {
             if (typeof value !== "string") {
@@ -70,7 +70,7 @@ export const databaseConfigSchema: Schema<DatabaseConfig> = {
 
     database: {
         doc: "Database name used to connect to database",
-        default: "substrate-example",
+        default: "brightwallet",
         format(value: any) {
             if (typeof value !== "string") {
                 throw new Error("must be a string")

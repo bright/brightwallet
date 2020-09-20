@@ -8,7 +8,7 @@ export PROJECT_DIR="$( cd "${SCRIPT_DIR}/.."  && pwd )"
 
 export VCS_VERSION=${VCS_VERSION:-${BUILD_VCS_NUMBER:-$(git rev-parse HEAD)}}
 
-export PROJECT_NAME=substrate-example
+export PROJECT_NAME=brightwallet
 
 export DOCKER_REGISTRY=${DOCKER_REGISTRY:-''}
 

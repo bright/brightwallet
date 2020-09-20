@@ -1,4 +1,4 @@
 FROM postgres:11.3
 
-ENV PROJECT_NAME=substrate-example
+ENV PROJECT_NAME=brightwallet
 COPY *.sh /docker-entrypoint-initdb.d/
