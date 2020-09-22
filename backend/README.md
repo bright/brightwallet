@@ -11,6 +11,9 @@ Run `../deploy/database/init-user-db.sh` script to create development and test d
 * `npm run database:migrate`
 * `npm run main` (starts at [localhost:3000](http://localhost:3000))
 
+To run local Substrate node [finish this tutorial](https://substrate.dev/docs/en/tutorials/create-your-first-substrate-chain/).
+TODO - run in docker
+
 ### Tests
 * `DEPLOY_ENV=test-local npm run database:migrate`
 * `DEPLOY_ENV=test-local npm run test`
