@@ -34,6 +34,7 @@ services:
     command: bash -c "npm run database:migrate:ci && npm run test:ci"
     depends_on:
       - database
+      - substrate
   database:
     #  we don't use manual tagging so that each deployment does not cause a db restart
     image: "${DOCKER_REGISTRY}brightwallet/database:1.0"
@@ -44,4 +45,8 @@ services:
     healthcheck:
       test: pg_isready -U postgres; do sleep 1; done
     restart: unless-stopped
-
+  substrate:
+    image: parity/substrate
+    command: --dev
+    ports:
+      - 9944:9944
